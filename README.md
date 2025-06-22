@@ -8,3 +8,11 @@ This Python program allows users to make retail payments by either scanning a QR
 - Validates merchant ID, currency, amount, and date format.
 - Returns a structured payment object with status tracking.
 - Logs messages based on user actions and input validation.
+
+## Payment Object Structure
+The function returns a payment object with the following fields:
+- `amount`: The amount of the payment.
+- `currency`: The currency of the payment.
+- `merchant`: The merchant ID.
+- `date`: The date of the payment.
+- `status`: Payment status ("pending", "approved", "declined").
