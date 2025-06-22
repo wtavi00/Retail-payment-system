@@ -58,7 +58,9 @@ def make_payment(amount: Union[float, str], currency: str, merchant: str, date: 
         # Simulate a rejected promise (raising an error)
         return {"error": str(e)}
 
-# Example usage
+# ----------------------------#
+# Example Usages
+# ----------------------------#
 if __name__ == "__main__":
     # Example 1: Payment via QR code
     qr_code_payment = make_payment(None, None, None, None, qr_code_data={
