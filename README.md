@@ -16,3 +16,7 @@ The function returns a payment object with the following fields:
 - `merchant`: The merchant ID.
 - `date`: The date of the payment.
 - `status`: Payment status ("pending", "approved", "declined").
+
+## Installation & Usage
+### Prerequisites
+Ensure you have Python installed on your system.
