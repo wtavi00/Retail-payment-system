@@ -20,3 +20,10 @@ The function returns a payment object with the following fields:
 ## Installation & Usage
 ### Prerequisites
 Ensure you have Python installed on your system.
+
+### Running the Program
+1. Clone this repository:
+   ```sh
+   git clone [https://github.com/wtavi00/payment/retail-payment-system.git](https://github.com/wtavi00/Retail-payment-system)
+   ```
+2. Navigate to the project directory:
