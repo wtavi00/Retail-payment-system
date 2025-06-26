@@ -28,7 +28,7 @@ Ensure you have Python installed on your system.
    ```
 2. Navigate to the project directory:
    ```sh
-   cd [retail-payment-system](https://github.com/wtavi00/Retail-payment-system/blob/main/main.py)
+   cd Retail-payment-system
    ```
 3. Run the script:
    ```sh
