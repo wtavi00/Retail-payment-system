@@ -27,3 +27,10 @@ Ensure you have Python installed on your system.
    git clone [https://github.com/wtavi00/payment/retail-payment-system.git](https://github.com/wtavi00/Retail-payment-system)
    ```
 2. Navigate to the project directory:
+   ```sh
+   cd [retail-payment-system](https://github.com/wtavi00/Retail-payment-system/blob/main/main.py)
+   ```
+3. Run the script:
+   ```sh
+   python payment.py
+   ```
