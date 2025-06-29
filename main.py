@@ -12,34 +12,42 @@ def make_payment(amount: Union[float, str], currency: str, merchant: str, date: 
 
     try:
         if qr_code_data:
+            # -- QR Code Flow --
+            
             # Extract data from QR code
             amount = qr_code_data.get("amount")
             currency = qr_code_data.get("currency")
             merchant = qr_code_data.get("merchant")
             date = qr_code_data.get("date")
+            
         else:
+            # -- Manual Input Flow --
+            
             # Validate user-entered data
             if merchant not in recognized_merchants:
                 log("Merchant not found")
                 raise ValueError("Merchant not recognized")
-
+                
+            # Validate amount
             try:
                 amount = float(amount)
             except ValueError:
                 log("Invalid amount")
                 raise ValueError("Amount must be a number")
 
+            # Validate currency
             if currency not in recognized_currencies:
                 log("Invalid currency")
                 raise ValueError("Currency not recognized")
 
+            # Validate date format (YYYY-MM-DD)
             try:
                 datetime.datetime.strptime(date, "%Y-%m-%d")
             except ValueError:
                 log("Invalid date")
                 raise ValueError("Invalid date format. Use YYYY-MM-DD")
 
-        # Construct payment object
+        # -- Construct the Payment Object --
         payment = {
             "amount": amount,
             "currency": currency,
@@ -58,9 +66,9 @@ def make_payment(amount: Union[float, str], currency: str, merchant: str, date: 
         # Simulate a rejected promise (raising an error)
         return {"error": str(e)}
 
-# ----------------------------#
+# ----------------------------
 # Example Usages
-# ----------------------------#
+# ----------------------------
 if __name__ == "__main__":
     # Example 1: Payment via QR code
     qr_code_payment = make_payment(None, None, None, None, qr_code_data={
