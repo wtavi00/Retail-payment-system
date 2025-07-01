@@ -5,7 +5,7 @@ def make_payment(amount: Union[float, str], currency: str, merchant: str, date: 
 
     # Predefined set of recognized currencies and merchants
     recognized_currencies = {"USD", "EUR", "INR", "GBP", "JPY"}
-    recognized_merchants = {"MARCHaNT123", "MARCHaNT456", "MARCHaNT7"}
+    recognized_merchants = {"MARCHANT123", "MARCHANT456", "MARCHANT7"}
 
     def log(message):
         print(message)
@@ -74,7 +74,7 @@ if __name__ == "__main__":
     qr_code_payment = make_payment(None, None, None, None, qr_code_data={
         "amount": 100.5,
         "currency": "USD",
-        "merchant": "VISA",
+        "merchant": "MARCHANT123",
         "date": "2025-01-20"
     })
     print(qr_code_payment)
