@@ -46,3 +46,9 @@ qr_code_payment = make_payment(None, None, None, None, qr_code_data={
 })
 print(qr_code_payment)
 ```
+
+#### Payment via Merchant ID
+```python
+user_payment = make_payment(50, "EUR", "MASTER", "2025-01-21")
+print(user_payment)
+```
