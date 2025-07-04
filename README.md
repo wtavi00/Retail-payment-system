@@ -52,3 +52,9 @@ print(qr_code_payment)
 user_payment = make_payment(50, "EUR", "MERCHANT456", "2025-01-21")
 print(user_payment)
 ```
+
+### Error Handling
+- If an unrecognized merchant ID is entered, the function logs "Merchant not found" and raises an error.
+- If the entered amount is not a number, it logs "Invalid amount" and raises an error.
+- If an invalid currency is entered, it logs "Invalid currency" and raises an error.
+- If an incorrect date format is entered, it logs "Invalid date" and raises an error.
