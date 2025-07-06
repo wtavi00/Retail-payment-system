@@ -58,3 +58,16 @@ print(user_payment)
 - If the entered amount is not a number, it logs "Invalid amount" and raises an error.
 - If an invalid currency is entered, it logs "Invalid currency" and raises an error.
 - If an incorrect date format is entered, it logs "Invalid date" and raises an error.
+
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Author
+Avijit Tarafder
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+## Issues
+If you encounter any issues, feel free to open an issue in the GitHub repository.
